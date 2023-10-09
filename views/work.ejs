@@ -1,0 +1,36 @@
+<%- include("partial/header.ejs") %>
+    
+<div class="box">
+
+    <div class="heading">
+        <a href="/"><h2>DAILY</h2></a>
+        <a href="/work"><h2>WORK</h2></a>
+    </div>
+
+    <div>
+        <h1>WORK</h1>
+    </div>
+
+    <div class="to-do-box">
+        <% if (locals.tasklist) { %>
+            <% for (let index = 0; index < tasklist.length; index++) { %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p>
+                        <%= tasklist[index]; %> 
+                    </p>
+                </div>
+            <% } %> 
+        <% } %>
+
+        <form class="item" action="/work" method="post">
+            <input type="text" name="newItem" placeholder="Enter Task" autocomplete="off">
+            <button type="submit" name="list">+</button>
+        </form>
+    </div>
+
+    
+
+</div>
+
+<%- include("partial/footer.ejs") %>

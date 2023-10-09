@@ -1,0 +1,98 @@
+body {
+    background-color: #E4DED4;
+}
+
+p {
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px solid black;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: grey; 
+    cursor:pointer;  
+}
+
+
+h1 {
+    font-family: 'Suranna', serif;
+    text-align: center;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin: 0px;
+    font-weight: 100;
+}
+
+button {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #d4ccbc;
+    color: #fff;
+    font-size: 15px;
+    border-width: 0;
+    margin-left: 10px;
+}
+
+button:hover {
+    color: grey; 
+    cursor:pointer; 
+}
+
+input:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+input[type="text"] {
+    text-align: center;
+    height: 20px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Josefin Sans', sans-serif;
+    min-width: 300px;
+    border-bottom: 3px solid black;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    min-height: 90vh;
+    background-color: white;
+}
+
+.to-do-box{
+    margin: 20px 50px;
+}
+
+.item {
+    padding: 10px 0px;
+    display: flex;
+}
